@@ -1,0 +1,37 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+entity full_adder_7seg is
+    Port ( a : in  STD_LOGIC;
+           b : in  STD_LOGIC;
+           cin : in  STD_LOGIC;
+           clk : in  STD_LOGIC;
+           s : out  STD_LOGIC_VECTOR (3 downto 0);
+           cout : out  STD_LOGIC;
+           seg : out  STD_LOGIC_VECTOR (6 downto 0));
+end full_adder_7seg;
+architecture Behavioral of full_adder_7seg is
+    signal sum : STD_LOGIC_VECTOR(3 downto 0);
+begin
+    process (clk)
+    begin
+        if (rising_edge(clk)) then
+            sum <= a + b + cin;
+            s <= sum(3 downto 0);
+            cout <= sum(4);
+            case s is
+                when "0000" => seg <= "0111111"; -- 0
+                when "0001" => seg <= "0000110"; -- 1
+                when "0010" => seg <= "1011011"; -- 2
+                when "0011" => seg <= "1001111"; -- 3
+                when "0100" => seg <= "1100110"; -- 4
+                when "0101" => seg <= "1101101"; -- 5
+                when "0110" => seg <= "1111101"; -- 6
+                when "0111" => seg <= "0000111"; -- 7
+                when "1000" => seg <= "1111111"; -- 8
+                when "1001" => seg <= "1101111"; -- 9
+                when others => seg <= "1111110"; -- Error
+            end case;
+        end if;
+    end process;
+end Behavioral;
