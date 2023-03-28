@@ -1,0 +1,15 @@
+NET "a" LOC = "P89";
+NET "b" LOC = "P88";
+NET "cin" LOC = "P87";
+NET "s<0>" LOC = "P86";
+NET "s<1>" LOC = "P85";
+NET "s<2>" LOC = "P84";
+NET "s<3>" LOC = "P83";
+NET "cout" LOC = "P82";
+NET "seg<0>" LOC = "P22";
+NET "seg<1>" LOC = "P21";
+NET "seg<2>" LOC = "P28";
+NET "seg<3>" LOC = "P27";
+NET "seg<4>" LOC = "P26";
+NET "seg<5>" LOC = "P25";
+NET "seg<6>" LOC = "P24";
