@@ -1,0 +1,16 @@
+NET "a" LOC = "P50";  # assign input signal a to pin P50
+NET "b" LOC = "P49";  # assign input signal b to pin P49
+NET "cin" LOC = "P48";  # assign input signal cin to pin P48
+
+# Output signals
+NET "sum" LOC = "P47";  # assign output signal sum to pin P47
+NET "cout" LOC = "P46";  # assign output signal cout to pin P46
+
+# Seven-segment display outputs
+NET "seg[0]" LOC = "P45";  # assign segment 0 output to pin P45
+NET "seg[1]" LOC = "P44";  # assign segment 1 output to pin P44
+NET "seg[2]" LOC = "P43";  # assign segment 2 output to pin P43
+NET "seg[3]" LOC = "P42";  # assign segment 3 output to pin P42
+NET "seg[4]" LOC = "P41";  # assign segment 4 output to pin P41
+NET "seg[5]" LOC = "P40";  # assign segment 5 output to pin P40
+NET "seg[6]" LOC = "P39";  # assign segment 6 output to pin P39
