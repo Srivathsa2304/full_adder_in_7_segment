@@ -1,0 +1,22 @@
+NET "A<3>" LOC="P84";
+NET "A<2>" LOC="P85";
+NET "A<1>" LOC="P86";
+NET "A<0>" LOC="P87";
+NET "B<3>" LOC="P88";
+NET "B<2>" LOC="P89";
+NET "B<1>" LOC="P90";
+NET "B<0>" LOC="P91";
+NET "Cin" LOC="P92";
+NET "sum<3>" LOC="P93";
+NET "sum<2>" LOC="P94";
+NET "sum<1>" LOC="P95";
+NET "sum<0>" LOC="P96";
+NET "Cout" LOC="P97";
+
+NET "seg<0>" LOC="P68";
+NET "seg<1>" LOC="P69";
+NET "seg<2>" LOC="P70";
+NET "seg<3>" LOC="P71";
+NET "seg<4>" LOC="P72";
+NET "seg<5>" LOC="P73";
+NET "seg<6>" LOC="P74";
